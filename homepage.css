@@ -1,5 +1,8 @@
 body{
-    background-color: rgb(0, 0, 0);
+    background-image: url("image/back1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
 }
 nav{
     margin: 2px;
@@ -15,26 +18,25 @@ nav a{
     font-family: Arial, Helvetica, sans-serif;
 }
 nav a.home{
-    color: rgb(219, 236, 58);
+    color: yellow;
 }
 
 a.signin
 {
-    color: rgb(219, 236, 58);
+    color: yellow;
     float: right;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
 }
 nav a:hover{
-    color: rgb(219, 236, 58);
+    color: yellow;
 }
 div input{
     padding: 10px;
-    margin-left: 70px;
+    margin-left: 30px;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 30px;
-    
+    margin-top: 30px; 
 }
 div button{
     border: none;
@@ -43,7 +45,7 @@ div button{
 }
 div .search{
     color: rgb(0, 0, 0);
-    background-color: rgb(219, 236, 58);
+    background-color: yellow;
 }
 a.down{
     color: rgb(255, 255, 255);
@@ -55,17 +57,46 @@ a.down{
     text-decoration: none;
 }
 a.down:hover{
-    color: rgb(219, 236, 58);
+    color: yellow;
 }
 .img1{
     float: right;
     margin-right: 20px;
     margin-top: 20px;
 }
+.main{
+    padding-top: 30px;
+}
 .bolly{
     color: white;
-    padding: 20px;
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-top: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
+    font-weight: 500;
+}
+.bollyimg{
+    margin-left: 10px;
+    height: 90%;
+    margin-right: 10px;
+}
+.bollyimgmain{
+    margin-left:30px;
+    height: 90%;
+    margin-right: 10px;
+}
+div.first{
+    overflow-x:auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 200px;
+    color: yellow;
+}
+a h3{
+    float: right;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+a h3:hover{
+    color: yellow;
 }

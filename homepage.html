@@ -3,7 +3,17 @@
     <head>
         <title>musico</title>
         <link rel="stylesheet" href="homepage.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+         
+         $('.search').click(function(){
+           $('#search').val("searching..");
+         });
+        });
+        </script>
 
     <!-- body of website-->
     <body>
@@ -15,10 +25,9 @@
             <a href="#">PODCASTS</a>
             <a href="#" class="signin">ABOUT</a>
             <a href="#" class="signin">SIGNIN</a>
-            
         </nav>
         <hr>
-        <main>
+        <main class="main">
             <!--
             <section>
                 <h1>Random songs</h1>
@@ -32,19 +41,54 @@
             </section>-->
             <section>
                 <div>
-                    <input type="text" placeholder="search for songs" name="search">
+                    <input type="text" placeholder="search for songs" id="search">
                     <button type="submit" class="search">Search</button>
-                    <img src="image/apple1.png" width="32" class="img1" href="#">
-                    <img src="image/android.png" width="30" class="img1" href="#">
+                    <a href="#"><img src="logo/apple1.png" width="32" class="img1"></a>
+                    <a href="#"><img src="logo/android.png" width="30" class="img1"></a>
                     <a href="#" class="down">Downlaod App</a>             
                 </div>
             </section>
+    
             <section>
                 <h1 class="bolly">Bollywood</h1>
+                <div class="first">
+                    <a href="#"><img src="image/s3.jpg" class="bollyimgmain"></a>
+                    <a href="#"><img src="image/s4.jpg" class="bollyimg"></a>
+                    <a href="#"><img src="image/s5.jpg" class="bollyimg"></a>
+                    <a href="#"><img src="image/s6.jpg" class="bollyimg"></a>
+                    <a href="#"><img src="image/s7.jpg" class="bollyimg"></a>
+                    <a href="#"><img src="image/s1.jpg" class="bollyimg"></a>
+                </div>
+                <a href="#"><h3 class="view">View all ></h3></a>
                 <br>
-                <img src="image/s3.jpg" href="#">
-            </section>
+            </section>   
+            <section>
+                <h1 class="bolly">Hollywood</h1>
+                <div class="first">
+                    <a href="#"><img src="image/s8.jpg" class="bollyimgmain"></a>
+                    <a href="#"><img src="image/s9.jpg" class="bollyimg"></a>
+                    <a href="#"><img src="image/s10.jpg" class="bollyimg"></a>
+                    <a href="#"><img src="image/s11.jpg" class="bollyimg"></a>
+                    <a href="#"><img src="image/s12.jpg" class="bollyimg"></a>
+                    <a href="#"><img src="image/s13.jpg" class="bollyimg"></a>
+                </div>
+                <a href="#"><h3 class="view">View all ></h3></a>
+                <br>
+            </section>    
             
+            <section>
+                <h1 class="bolly">Punjabi</h1>
+                <div class="first">
+                    <a href="#"><img src="image/s14.jpg" class="bollyimgmain"></a>
+                    <a href="#"><img src="image/s15.jpg" class="bollyimg"></a>
+                    <a href="#"><img src="image/s16.jpg" class="bollyimg"></a>
+                    <a href="#"><img src="image/s17.jpg" class="bollyimg"></a>
+                    <a href="#"><img src="image/s18.jpg" class="bollyimg"></a>
+                    <a href="#"><img src="image/s19.jpg" class="bollyimg"></a>
+                </div>
+                <a href="#"><h3 class="view">View all ></h3></a>
+                <br>
+            </section>
         </main>
 
     </body>
