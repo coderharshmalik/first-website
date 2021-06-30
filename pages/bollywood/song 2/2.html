@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="2.css">
+    <title>Musico-Duniyaa</title>
+</head>
+
+<body>
+    <div id="blackplay" onClick="check()">
+        <h2 class="glow">Duniyaa</h2>
+        <img src="img/s4.jpg" class="img">
+        <audio id="song1" loop>
+            <source src="music/Luka Chuppi Duniyaa Full Video Song Kartik Aaryan Kriti Sanon Akhil Dhvani B.mp3" type="audio/mpeg">
+        </audio>
+        <a href="#" class="a"><h1 id="currentsong">PLAY</h1></a>
+       
+    </div>
+    
+<script>
+    var count=1;
+    currentsong="Duniyaa"
+    var music="song1"
+
+    function check()
+    {
+            
+        if (count%2!=0)
+        {
+            document.getElementById("currentsong").innerHTML="PAUSE"   
+            document.getElementById(music).play();
+        }
+        else
+        {
+            document.getElementById("currentsong").innerHTML="PLAY"
+            document.getElementById(music).pause();
+        } 
+        count++;        
+    }
+</script>
+
+</body>
+</html>
